@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f51dcfbc-8ad1-4698-baa4-9de2355a89bf" name="Changes" comment="Addition of getters and setters for Person Class&#10;Creation of Student Class and StudentMananger Class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" afterDir="false" />
+    <list default="true" id="f51dcfbc-8ad1-4698-baa4-9de2355a89bf" name="Changes" comment="Addition of attributes and methods for StudentManager">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FileHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -71,13 +72,22 @@
       <option name="project" value="LOCAL" />
       <updated>1729983408887</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Addition of attributes and methods for StudentManager">
+      <option name="closed" value="true" />
+      <created>1729983730460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729983730460</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creation of project and import lombok dependency" />
     <MESSAGE value="Addition of Abstract Person Class" />
     <MESSAGE value="Addition of getters and setters for Person Class&#10;Creation of Student Class and StudentMananger Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Addition of getters and setters for Person Class&#10;Creation of Student Class and StudentMananger Class" />
+    <MESSAGE value="Addition of attributes and methods for StudentManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addition of attributes and methods for StudentManager" />
   </component>
 </project>
