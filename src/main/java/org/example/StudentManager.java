@@ -57,13 +57,18 @@ public class StudentManager {
      * @return Student that matches the studentId input
      */
     private Student searchStudentById(int studId, int idx) throws StudNotFoundException{
-        for (Student student :  students){
-            if (student.getStudId() == studId) {
-                return student;
-            }
-            searchStudentById(studId, idx + 1);
+        try {
+              Student currentCheck = students.get(idx);
+              if (currentCheck.getStudId() == studId) {
+                  return currentCheck;
+              }
+              if (students.size() => idx){
+                  throw new StudNotFoundException();
+              }
+              searchStudentById(studId, idx + 1);
+          }
+        catch (Exception e){
+              System.out.println(e.getMessage());
         }
-        throw new StudNotFoundException();
     }
-
 }

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f51dcfbc-8ad1-4698-baa4-9de2355a89bf" name="Changes" comment="Implemented constructor for Student Class and StudentManager Class added code for methods in Student manager">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IOException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IOException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NumberFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/NumberFormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
