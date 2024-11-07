@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f51dcfbc-8ad1-4698-baa4-9de2355a89bf" name="Changes" comment="no message no changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="f51dcfbc-8ad1-4698-baa4-9de2355a89bf" name="Changes" comment="Implemented constructor for Student Class and StudentManager Class added code for methods in Student manager" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729985144347</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implemented constructor for Student Class and StudentManager Class added code for methods in Student manager">
+      <option name="closed" value="true" />
+      <created>1731003860562</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731003860562</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,6 +151,7 @@
     <MESSAGE value="Creation of IOException, NumberFormatException, StudNotFoundException and all extended to Exception Class" />
     <MESSAGE value="No additions just comments about what is needed in the Main GUI" />
     <MESSAGE value="no message no changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="no message no changes" />
+    <MESSAGE value="Implemented constructor for Student Class and StudentManager Class added code for methods in Student manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented constructor for Student Class and StudentManager Class added code for methods in Student manager" />
   </component>
 </project>
