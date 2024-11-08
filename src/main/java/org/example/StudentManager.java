@@ -3,11 +3,14 @@ package org.example;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.*;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 @Setter
 @Getter
-public class StudentManager {
+public class StudentManager implements FileHandler{
     private ArrayList<Student> students;
 
     public StudentManager() {
@@ -28,6 +31,7 @@ public class StudentManager {
      */
     public void addStudent(Student student){
     students.add(student);
+    saveToFile(student.getDescription(), students);
     }
     /**
      * Removes student from array list of students, if student is not found
@@ -69,5 +73,41 @@ public class StudentManager {
         }
 
        return searchStudentById(studId, idx - 1);
+    }
+
+    public void saveToFile(String fileName, ArrayList<Student> students){
+
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter("\"C:\\Users\\Samuel\\Selihom\\FinalProject\\Students.txt\""));
+            BufferedReader reader = new BufferedReader(new FileReader("\"C:\\Users\\Samuel\\Selihom\\FinalProject\\Students.txt\""))
+
+            String line;
+            while((line = reader.readLine()) != null) {
+                writer.write(fileName + '\n');
+            }
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        while
+
+    }
+
+    @Override
+    public void loadFromFile(String file) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("\"C:\\Users\\Samuel\\Selihom\\FinalProject\\Students.txt\""))
+
+            String line;
+            while((line = reader.readLine()) != null) {
+
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
     }
 }

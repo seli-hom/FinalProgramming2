@@ -19,5 +19,5 @@ abstract class Person {
         this.lNAme = lName;
     }
 
-    abstract public void getDescription();
+    abstract public String getDescription();
 }
