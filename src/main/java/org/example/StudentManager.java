@@ -17,7 +17,11 @@ public class StudentManager {
     public StudentManager(ArrayList<Student> students) {
         this.students = students;
     }
-
+    public void displayStudents(){
+        for (Student student : students){
+            student.getDescription();
+        }
+    }
     /**
      * Adds Student to the array list of students
      * @param student
@@ -59,18 +63,14 @@ public class StudentManager {
      * @return Student that matches the studentId input
      */
     private Student searchStudentById(int studId, int idx) throws StudNotFoundException{
-        try {
-              Student currentCheck = students.get(idx);
-              if (currentCheck.getStudId() == studId) {
-                  return currentCheck;
-              }
-              if (students.size() => idx){
-                  throw new StudNotFoundException("Student does not exist in the system");
-              }
-              searchStudentById(studId, idx + 1);
-          }
-        catch (Exception e){
-              System.out.println(e.getMessage());
-        }
+
+            if (students.get(idx).getStudId() == studId) {
+                return students.get(idx);
+            }
+            if (students.size() >= idx){
+                throw new StudNotFoundException("Student does not exist in the system");
+            }
+            searchStudentById(studId, idx + 1);
+        return null;
     }
 }

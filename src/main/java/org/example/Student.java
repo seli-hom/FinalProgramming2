@@ -25,7 +25,7 @@ public class Student extends Person{
     @Override
     public void getDescription() {
         System.out.println("Student: " + studId + "\n"
-                + getFName() + " " + getLNAme());
+                + getFName() + " " + getLNAme() + " GPA: " + studGPA);
     }
 
     @Override
