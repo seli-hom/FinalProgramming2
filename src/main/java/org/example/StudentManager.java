@@ -27,17 +27,19 @@ public class StudentManager {
     }
 
     /**
-     * Removes student from array list of students
+     * Removes student from array list of students, if student is not found
+     * the exception will be caught
      * @param studId
      */
     public void removeStudent(int studId) throws StudNotFoundException {
-        Student toBeRemoved = searchStudentById(studId);
-        if (toBeRemoved == null){
-            System.out.println("Student does not exist in the system" +
-                    '\n' + "Action not performed...");
-            return;
+        try {
+            Student toBeRemoved = searchStudentById(studId);
+            students.remove(toBeRemoved);
         }
-        students.remove(toBeRemoved);
+        catch (Exception e){
+            System.out.println( e.getMessage() +
+                    '\n' + "Action cannot be performed...");
+        }
     }
 
     /**
@@ -50,7 +52,7 @@ public class StudentManager {
     }
 
     /**
-     * Helper method for recursion. Searches for thestudent by going through all students and finding a
+     * Helper method for recursion. Searches for the student by going through all students and finding a
      * match with the studentId we are searching for, if not found it will throw a StudentNotFound Exception.
      * @param studId student we are looking for
      * @param idx initial idx comparing the studentIds
@@ -63,7 +65,7 @@ public class StudentManager {
                   return currentCheck;
               }
               if (students.size() => idx){
-                  throw new StudNotFoundException();
+                  throw new StudNotFoundException("Student does not exist in the system");
               }
               searchStudentById(studId, idx + 1);
           }

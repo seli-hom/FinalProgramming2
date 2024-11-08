@@ -157,4 +157,15 @@
     <MESSAGE value="Implemented constructor for Student Class and StudentManager Class added code for methods in Student manager" />
     <option name="LAST_COMMIT_MESSAGE" value="Implemented constructor for Student Class and StudentManager Class added code for methods in Student manager" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/StudentManager.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>
