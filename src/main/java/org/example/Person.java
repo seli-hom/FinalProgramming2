@@ -11,5 +11,13 @@ abstract class Person {
     private String fName;
     private String lNAme;
 
+    public Person() {
+    }
+
+    public Person(String name, String lName) {
+        fName = name;
+        this.lNAme = lName;
+    }
+
     abstract public void getDescription();
 }

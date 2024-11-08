@@ -12,9 +12,11 @@ public class Student extends Person{
     private static int nextID = 10001;
 
     public Student() {
+        super();
     }
 
-    public Student(int studId, double studGPA) {
+    public Student(String name, String lName, double studGPA) {
+        super(name, lName);
         this.studId = nextID++;
         this.studGPA = studGPA;
 
