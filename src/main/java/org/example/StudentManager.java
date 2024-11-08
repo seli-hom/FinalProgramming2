@@ -29,7 +29,6 @@ public class StudentManager {
     public void addStudent(Student student){
     students.add(student);
     }
-
     /**
      * Removes student from array list of students, if student is not found
      * the exception will be caught
@@ -45,14 +44,13 @@ public class StudentManager {
                     '\n' + "Action cannot be performed...");
         }
     }
-
     /**
      * Searches for the Student through their studentID
      * @param studId
      * @return the Student corresponding to the id
      */
     public Student searchStudentById(int studId) throws StudNotFoundException {
-        return searchStudentById(studId,0);
+        return searchStudentById(studId,students.size() -1);
     }
 
     /**
@@ -63,14 +61,13 @@ public class StudentManager {
      * @return Student that matches the studentId input
      */
     private Student searchStudentById(int studId, int idx) throws StudNotFoundException{
+        if (idx < 0){
+            throw new StudNotFoundException("Student does not exist in the system");
+        }
+        if (students.get(idx).getStudId() == studId) {
+            return students.get(idx);
+        }
 
-            if (students.get(idx).getStudId() == studId) {
-                return students.get(idx);
-            }
-            if (students.size() >= idx){
-                throw new StudNotFoundException("Student does not exist in the system");
-            }
-            searchStudentById(studId, idx + 1);
-        return null;
+       return searchStudentById(studId, idx - 1);
     }
 }

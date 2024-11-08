@@ -26,7 +26,10 @@ public class Main {
         System.out.println("\n \n \n");
 
         try {
-          Student found =  school.searchStudentById(10001);
+          Student found =  school.searchStudentById(10004);
+          if (found == null){
+              throw new StudNotFoundException("Student is null.");
+          }
             found.getDescription();
         } catch (StudNotFoundException e) {
             System.out.println(e.getMessage());
