@@ -1,0 +1,6 @@
+Student: 10001
+Tony Effe GPA: 3.1
+Student: 10002
+Poppy Seeds GPA: 2.6
+Student: 10003
+Julie Plante GPA: 3.0
