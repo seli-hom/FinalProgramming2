@@ -12,16 +12,16 @@ public class Main {
         //Buttons
         //Alert Dialogs
 
-        Student tony = new Student("Tony", "PooPoo",3.1 );
-        Student pee = new Student("Tony", "PeePee",2.6 );
-        Student poo = new Student("Cacca", "PooPoo",3.0 );
+        Student tony = new Student("Tony", "Effe",3.1 );
+        Student poppy = new Student("Poppy", "Seeds",2.6 );
+        Student julie = new Student("Julie", "Plante",3.0 );
         ArrayList<Student> students;
         students = new ArrayList<Student>();
         students.add(tony);
-        students.add(pee);
+        students.add(poppy);
 
         StudentManager school = new StudentManager(students);
-        school.addStudent(poo);
+        school.addStudent(julie);
         school.displayStudents();
         System.out.println("\n \n \n");
 
@@ -30,9 +30,17 @@ public class Main {
           if (found == null){
               throw new StudNotFoundException("Student is null.");
           }
+
             found.getDescription();
         } catch (StudNotFoundException e) {
             System.out.println(e.getMessage());
         }
+
+        for (int i = 0; i < school.getStudents().size(); i++){
+            school.saveToFile("students.txt", school.getStudents());
+
+        }
+
+        school.loadFromFile("students.txt");
     }
 }
