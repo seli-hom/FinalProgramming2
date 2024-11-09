@@ -80,9 +80,9 @@ public class StudentManager implements FileHandler{
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
                 for (Student student : students){
                     writer.write(student.getDescription() + '\n');
-                    writer.close();
-                }
 
+                }
+            writer.close();
         }
         catch (IOException e) {
             System.out.println(e.getMessage());
@@ -96,10 +96,9 @@ public class StudentManager implements FileHandler{
             String line = reader.readLine();
             while(line != null){
                 System.out.println(line);
-                reader.close();
+                line = reader.readLine();
             }
-
-            System.out.println(line);
+            reader.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

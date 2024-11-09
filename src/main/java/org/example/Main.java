@@ -25,6 +25,15 @@ public class Main {
         school.displayStudents();
         System.out.println("\n \n \n");
 
+
+
+
+
+
+
+
+
+
         try {
           Student found =  school.searchStudentById(10004);
           if (found == null){
@@ -42,5 +51,19 @@ public class Main {
         }
 
         school.loadFromFile("students.txt");
+    }
+
+    public static void menuPage(){
+
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" );
+        System.out.println(" ===========Student Management System===========" );
+
+        System.out.println("1 -> Add student to management system");
+        System.out.println("2 -> Remove student from management system" );
+        System.out.println("3 -> Load information from file" );
+        System.out.println("4 -> Save to text file" );
+
+        System.out.println("         ===========Thank You===========        " );
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" );
     }
 }

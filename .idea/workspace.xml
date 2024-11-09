@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f51dcfbc-8ad1-4698-baa4-9de2355a89bf" name="Changes" comment="Changed the return type in getDescription() to string instead of void. Created methods in Student manager implementing File handler methpds saveToFile and LoadFrom File, added code to saveToFile and implemented saveToFile in addStudent">
+    <list default="true" id="f51dcfbc-8ad1-4698-baa4-9de2355a89bf" name="Changes" comment="Added code to loadFile method and fixed up SaveFile method in student manager, Tested in main and save file seems to work for a singular iteration while loadFile seems to loop inifinetly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FileHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" afterDir="false" />
     </list>
@@ -177,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731087324608</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added code to loadFile method and fixed up SaveFile method in student manager, Tested in main and save file seems to work for a singular iteration while loadFile seems to loop inifinetly">
+      <option name="closed" value="true" />
+      <created>1731113029644</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731113029644</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +201,7 @@
     <MESSAGE value="went bback and forth to check that the student search does work as it should changed minor things" />
     <MESSAGE value="made changes to student manager so the search will work and tested in ma&#10;in with different values" />
     <MESSAGE value="Changed the return type in getDescription() to string instead of void. Created methods in Student manager implementing File handler methpds saveToFile and LoadFrom File, added code to saveToFile and implemented saveToFile in addStudent" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the return type in getDescription() to string instead of void. Created methods in Student manager implementing File handler methpds saveToFile and LoadFrom File, added code to saveToFile and implemented saveToFile in addStudent" />
+    <MESSAGE value="Added code to loadFile method and fixed up SaveFile method in student manager, Tested in main and save file seems to work for a singular iteration while loadFile seems to loop inifinetly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code to loadFile method and fixed up SaveFile method in student manager, Tested in main and save file seems to work for a singular iteration while loadFile seems to loop inifinetly" />
   </component>
 </project>
