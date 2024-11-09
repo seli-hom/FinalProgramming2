@@ -16,6 +16,8 @@ public class Main {
         Student poppy = new Student("Poppy", "Seeds",2.6 );
         Student julie = new Student("Julie", "Plante",3.0 );
         ArrayList<Student> students = new ArrayList<Student>();
+        students.add(tony);
+        students.add(poppy);
 
         StudentManager school = new StudentManager(students);
         school.addStudent(julie);
@@ -24,10 +26,12 @@ public class Main {
 
 
         // creating user interaction
-        int choice = 0;
-
         menuPage();
-        while (true){
+        int choice = console.nextInt();
+        boolean more = true;
+
+
+        while (more){
 
             switch(choice){
                 case 1 -> {
@@ -60,7 +64,13 @@ public class Main {
                     System.out.println("Please write the name of the file with '.txt' in which you wish to save the files");
                     System.out.println("File saved successfully");
                 }
+                default ->{
+                    System.out.println("No actions taken. Exiting menu...");
+                    more = false;
+                }
+
             }
+
             System.out.println("Would you like to perform another action? Yes/No");
             console.nextLine();
 
