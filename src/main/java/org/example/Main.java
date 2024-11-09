@@ -26,6 +26,7 @@ public class Main {
         System.out.println("\n \n \n");
 
 
+        // creating user interaction
 
 
 
@@ -53,6 +54,9 @@ public class Main {
         school.loadFromFile("students.txt");
     }
 
+    /**
+     * Menu pag eto be displayed for user to make choice
+     */
     public static void menuPage(){
 
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" );

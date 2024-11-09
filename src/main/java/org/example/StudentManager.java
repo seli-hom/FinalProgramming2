@@ -20,6 +20,7 @@ public class StudentManager implements FileHandler{
     public StudentManager(ArrayList<Student> students) {
         this.students = students;
     }
+
     public void displayStudents(){
         for (Student student : students){
             student.getDescription();
@@ -29,9 +30,11 @@ public class StudentManager implements FileHandler{
      * Adds Student to the array list of students
      * @param student
      */
+
     public void addStudent(Student student){
     students.add(student);
     }
+
     /**
      * Removes student from array list of students, if student is not found
      * the exception will be caught
@@ -47,6 +50,7 @@ public class StudentManager implements FileHandler{
                     '\n' + "Action cannot be performed...");
         }
     }
+
     /**
      * Searches for the Student through their studentID
      * @param studId
@@ -73,7 +77,13 @@ public class StudentManager implements FileHandler{
 
        return searchStudentById(studId, idx - 1);
     }
-@Override
+
+    /**
+     * saves the object of array list into a textFile with titled (fileName)
+     * @param fileName title/name of text file in which objects are saved to
+     * @param students Array list whose objects we wish to save to the textFile
+     */
+    @Override
     public void saveToFile(String fileName, ArrayList<Student> students){
 
         try {
@@ -89,6 +99,10 @@ public class StudentManager implements FileHandler{
         }
     }
 
+    /**
+     * Loads text from input file and displays it on the console
+     * @param file text file from which we wish to load the information from
+     */
     @Override
     public void loadFromFile(String file) {
         try {
